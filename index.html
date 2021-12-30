@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Blogr]</title>
@@ -12,16 +13,27 @@
 </head>
 <body>
  <div class="body">
-  <div class="nav">
-     <div id="navbar">
-       <ul>
-         <li>BLOGR</li>
-         <li><select name="" id="">
-                <option value="product">product</option>
-             </select>
-        </li>
-       </ul>
-     </div>
+  <nav>
+    <div class="nav">
+      <div class="leftnav">
+        <ul>
+          <li><a href="#home">BlogR</a></li>
+          <li>Product <i class="fas fa-chevron-down"></i></li>
+          <li>Company <i class="fas fa-chevron-down"></i></li>
+          <li>Connect<i class="fas fa-chevron-down"></i></li>
+        </ul>
+      </div>
+      <div class="rightnav">
+        <button type="submit">Login</button>
+        <input type="button" value="SignUp">
+      </div>
+    </div>
+  </nav>
+  <div id="main">
+    <h1>A modern publishing platform</h1>
+    <p>Grow your audience and build your online brand</p>
+    <button type="submit">Start For Free</button>
+        <input type="button" value="Learn More">
   </div>
  </div>
 
