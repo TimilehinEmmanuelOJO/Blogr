@@ -34,10 +34,46 @@ img{
     background-repeat: no-repeat;
     background-position: left;
 }
-.nav-flex{
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.leftnav{
     display: flex;
 }
-
+ul{
+    display: flex;
+}
+li{
+    color: white;
+}
+.rightnav{
+    
+}
+#main{
+    display: grid;
+}
+#text1{
+    text-align: center;
+}
+#text2{
+    text-align: center;
+}
+#mainbtn{
+    width: 200px;
+    height: 50px;
+    border: white solid 1px;
+    border-radius: 30px;
+    background: transparent;
+    cursor: pointer;
+}
+#mainbtn:hover{
+    background: white;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
 
 The designs were created to the following widths:
 
