@@ -12,19 +12,24 @@ ul{
 a{
     text-decoration: none;
     color: #333;
+    cursor: pointer;
 }
 h1, h2{
     font-weight: 600px;
     line-height: 1.2;
     margin: 10px 0;
 }
+.h3{
+    color: #667b8e;
+}
 p{
     margin: 10px 0;
+    
 }
 img{
     width: 100%;
 }
-.body{
+.section1{
     height: 500px;
     width: 100%;
     background-color: #ff525c;
@@ -40,32 +45,84 @@ img{
 }
 .leftnav{
     display: flex;
+    margin-left: 100px;
+    margin-top: 30px;
 }
+/*.blo{
+    font-size: 30px;
+}*/
 ul{
     display: flex;
 }
 li{
     color: white;
+    margin: 0 20px;
 }
 .rightnav{
-    
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.nav-btn1{
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.nav-btn2{
+    width: 130px;
+    height: 40px;
+    border-radius: 40px;
+    border: transparent;
+    background-color: white;
+    color: #ff525c;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
 #main{
     display: grid;
+    margin-top: 100px;
+    color: white;
 }
 #text1{
     text-align: center;
+    font-size: 30px;
+    font-weight: 800px;
+    letter-spacing: 4px;
 }
 #text2{
     text-align: center;
+    font-size: 16px;
+    font-weight: 800px;
 }
-#mainbtn{
+#mainbtn1{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    color: #ff525c;
+    font-size: 16px;
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#mainbtn2{
     width: 200px;
     height: 50px;
     border: white solid 1px;
     border-radius: 30px;
     background: transparent;
     cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
 }
 #mainbtn:hover{
     background: white;
@@ -73,8 +130,62 @@ li{
 .btn{
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 }
-
+.section2{
+    height: 600px;
+    background-color: #fafafa;
+    width: 100%;
+}
+.h2{
+    text-align: center;
+    color: #667b8e;
+}
+.top{
+    display: grid;
+}
+.subtop{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-img{
+    width: 600px;
+    height: auto;
+}
+.intro-text{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.h3{
+    color: #667b8e;
+}
+.p{
+    color: #919499;
+}
+.section3{
+    background-image: url("images/bg-pattern-circles-removebg-preview.png");
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    height: 430px;
+    background-color: #3c3f60;
+    width: 100%;
+    border-bottom-left-radius:100px;
+    border-top-right-radius: 100px;
+}
+.phone{
+    width: 600px;
+    margin-left: 80px;
+    position: relative;
+    top: -80px;
+}
+.phone-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.phone-text{
+    margin: 120px auto;
+    color: #f0f3fa;
+}
 The designs were created to the following widths:
 
 - Mobile: 375px
