@@ -18,10 +18,39 @@
       <div class="leftnav">
         <ul>
           <li><a href="#home" class="blo">BlogR</a></li>
-          <li><a href=""> Product <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="">Company <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="">Connect<i class="fas fa-chevron-down"></i></a></li>
+          <div>
+            <li><button onclick="dropDown()" class="dropbtn">Product <i class="fas fa-chevron-down"></i></button></li>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Overview</a>
+            <a href="#">Pricing</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Features</a>
+            <a href="#">Integrations</a>
+          </div>  
+          </div>
+
+          <div>
+            <li><button onclick="dropDown1()" class="dropbtn">Company<i class="fas fa-chevron-down"></i></button></li>
+          <div id="myDropdown1" class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>  
+          </div>
+
+          <div>
+            <li><button onclick="dropDown2()" class="dropbtn">Connect <i class="fas fa-chevron-down"></i></button></li>
+          <div id="myDropdown2" class="dropdown-content">
+            <a href="#">Contact</a>
+            <a href="#">Newsletter</a>
+            <a href="#">LinkedIn</a>
+          </div>  
+          </div>
+          
         </ul>
+        
+
       </div>
       <div class="rightnav">
         <button type="submit" class="nav-btn1">Login</button>
@@ -72,10 +101,10 @@
   <div class="phone-flex">
     <img src="images\illustration-phones-removebg-preview.png" class="phone" alt="">
     <div class="phone-text">
-      <h3 style="font-size: 30px;">
+      <h3 style="font-size: 30px; color: white;">
         State of the Art Infrastructure
       </h3>
-      <p style="font-size: 14px;">
+      <p style="font-size: 14px; color: rgb(182, 173, 173);">
         With reliability and speed in mind, worldwide data centers provide the <br>
          backbone for ultra-fast connectivity. This ensures your site will load <br>
           instantly, no matter where your readers are, keeping your site <br>
@@ -85,12 +114,71 @@
   </div>
 </section>
 <section class="section4">
-
+  <div class="laptop-sec">
+    <div class="img-lap">
+      <img src="images\illustration-laptop-desktop-removebg-preview.png" alt="">
+    </div>
+    <div class="lap-text">
+      <div class="text1">
+        <h3 class="h3">Free, open, simple</h3>
+        <p class="p">Blogr is a free and open source application backed by a large <br>
+           community of helpful developers. It supports features such as code <br>
+          syntax highlighting, RSS feeds, social media integration, third-party <br>
+          commenting tools, and works seamlessly with Google Analytics. <br>
+          The architecture is clean and is relatively easy to learn.</p>
+      </div>
+      <div class="text2">
+        <h3 class="h3">Powerful tooling
+          </h3>
+        <p class="p">
+          Batteries included. We built a simple and straightforward CLI tool that <br>
+           makes customization and deployment a breeze, but capable of <br>
+            producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </div>
 </section>
+<footer>
+  <div class="footer-flex">
+    <div class="blogr">
+      <h1>BlogR</h1>
+    </div>
+    <div class="product">
+      <a href=""><h3 id="h3">Product</h3></a>
+      <div class="over">
+        <a href=""><h5>Overview</h5></a>
+        <a href=""><h5>Pricing</h5></a>
+        <a href=""><h5>Marketplace</h5></a>
+        <a href=""><h5>Features</h5></a>
+        <a href=""><h5>integrations</h5></a>
+      </div>
+    </div>
+    <div class="company">
+      <a href=""><h3 id="h3">Company</h3></a>
+      <div class="abt">
+        <a href=""><h5>About</h5></a>
+        <a href=""><h5>Team</h5></a>
+        <a href=""><h5>Blog</h5></a>
+        <a href=""><h5>Careers</h5></a>
+        </div>
+    </div>
+    <div class="connect">
+      <a href=""><h3 id="h3">Connect</h3></a>
+      <div class="con">
+        <a href=""><h5>Contact</h5></a>
+        <a href=""><h5>Newsletter</h5></a>
+        <a href=""><h5>LinkedIn</h5></a>
+        </div>
+    </div>
+  </div>
+</footer>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Timi Ojo</a>.
-  </div>
+  </div>-->
+
+ 
+  <script src="index.js"></script>
 </body>
 </html>

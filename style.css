@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     box-sizing: border-box;
     padding: 0%;
@@ -5,13 +7,13 @@
 }
 body{
     line-height: 1.6;
+    font-family: 'Overpass', sans-serif;
 }
 ul{
     list-style-type: none;
 }
 a{
     text-decoration: none;
-    color: #333;
     cursor: pointer;
 }
 h1, h2{
@@ -42,15 +44,19 @@ img{
 .nav{
     display: flex;
     justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
 }
 .leftnav{
     display: flex;
     margin-left: 100px;
     margin-top: 30px;
 }
-/*.blo{
-    font-size: 30px;
-}*/
+.blo{
+    font-size: 50px;
+    position: relative;
+    top: -30px;
+    color: white;
+}
 ul{
     display: flex;
 }
@@ -58,6 +64,7 @@ li{
     color: white;
     margin: 0 20px;
 }
+ul li a{color: rgb(241, 231, 231);}
 .rightnav{
     margin-right: 100px;
     margin-top: 30px;
@@ -73,6 +80,10 @@ li{
     font-weight: 700;
     cursor: pointer;
 }
+.nav-btn1:hover{
+    background-color: white;
+    color: #ff525c;
+}
 .nav-btn2{
     width: 130px;
     height: 40px;
@@ -83,6 +94,10 @@ li{
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+}
+.nav-btn2:hover{
+    background-color:#ff525c ;
+    color: white;
 }
 #main{
     display: grid;
@@ -112,6 +127,11 @@ li{
     cursor: pointer;
     margin-right: 5px;
 }
+#mainbtn1:hover{
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+}
 #mainbtn2{
     width: 200px;
     height: 50px;
@@ -124,8 +144,9 @@ li{
     font-size: 16px;
     font-weight: 700;
 }
-#mainbtn:hover{
-    background: white;
+#mainbtn2:hover{
+    background-color: white;
+    color: #ff525c;
 }
 .btn{
     display: flex;
@@ -140,7 +161,11 @@ li{
 .h2{
     text-align: center;
     color: #667b8e;
+    position: relative;
+    top: 80px;
+    font-size: 30px;
 }
+
 .top{
     display: grid;
 }
@@ -184,45 +209,86 @@ li{
 }
 .phone-text{
     margin: 120px auto;
-    color: #f0f3fa;
+    color: #ffffff;
 }
-The designs were created to the following widths:
+.section4{
+    margin-bottom: 80px ;
+    width: 100%;
+}
+.laptop-sec{
+    display: flex;
+}
+.img-lap{
+    width: 600px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.lap-text{
+    margin-top: 270px;
+    margin-left: 50px;
+}
+footer{
+    background-color: #24242c;
+    height: 300px;
+    border-top-right-radius: 100px;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+    color: #d4e0e0;
+    padding-top: 60px;
+    }
+    .blog{
 
-- Mobile: 375px
-- Desktop: 1440px
+    }
+h5{
+     color: #b8bcc2;
+     margin-bottom: 10px;
+    }
+#h3{
+    color: #939699;
+    margin-bottom: 20px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: rgb(241, 231, 231);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {color: rgb(109, 50, 50)}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
-## Colors
 
-### Primary
 
-- Light red (CTA text): hsl(356, 100%, 66%)
-- Very light red (CTA hover background): hsl(355, 100%, 74%)
-- Very dark blue (headings): hsl(208, 49%, 24%)
 
-### Neutral
 
-- White (text): hsl(0, 0%, 100%)
-- Grayish blue (footer text): hsl(240, 2%, 79%)
-- Very dark grayish blue (body copy): hsl(207, 13%, 34%)
-- Very dark black blue (footer background): hsl(240, 10%, 16%)
-
-### Gradient
-
-Background gradient - Intro/CTA mobile nav:
-
-- Very light red: hsl(13, 100%, 72%)
-- Light red: hsl(353, 100%, 62%)
-
-Background gradient - body:
-
-- Very dark gray blue: hsl(237, 17%, 21%)
-- Very dark desaturated blue: hsl(237, 23%, 32%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
 
 ### Fonts
 
