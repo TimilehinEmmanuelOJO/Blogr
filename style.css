@@ -9,6 +9,10 @@ body{
     line-height: 1.6;
     font-family: 'Overpass', sans-serif;
 }
+@media(max-width: 500px) {
+    body{}
+}
+
 ul{
     list-style-type: none;
 }
@@ -57,6 +61,7 @@ img{
     top: -30px;
     color: white;
 }
+@media(max-width: 500px){.blo{margin: 0 100px;}}
 ul{
     display: flex;
 }
@@ -65,7 +70,51 @@ li{
     margin: 0 20px;
 }
 ul li a{color: rgb(241, 231, 231);}
+
+.drop-btn{
+    background-color: transparent;
+    color: rgb(241, 231, 231);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  @media(max-width:800px){
+    .drop-btn{display: none;}
+}
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    transition:  0.5s ease-in-out;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {color: rgb(109, 50, 50); text-decoration: underline;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
 .rightnav{
+    display: flex;
+    gap: 5px;
     margin-right: 100px;
     margin-top: 30px;
 }
@@ -79,10 +128,12 @@ ul li a{color: rgb(241, 231, 231);}
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.4s;
 }
 .nav-btn1:hover{
     background-color: white;
     color: #ff525c;
+    transition:  0.5s ease-in-out;
 }
 .nav-btn2{
     width: 130px;
@@ -98,12 +149,43 @@ ul li a{color: rgb(241, 231, 231);}
 .nav-btn2:hover{
     background-color:#ff525c ;
     color: white;
+    transition: 0.4s ease-in-out;
+}
+@media(max-width: 500px){
+    .nav{display: flex;
+    flex-direction: column;
+    }
+    .leftnav{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .rightnav{
+        display: grid;
+        margin-left: 160px;
+        margin-top: 300px;
+        position: relative;
+        top: -50px;
+    }   
+}
+@media(max-width: 800px){
+    .leftnav{
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+    .rightnav{
+        margin-right: 1000px;
+        margin-top: 30px;
+    }   
 }
 #main{
     display: grid;
     margin-top: 100px;
     color: white;
 }
+@media(max-width: 500px){
+    #main{position: relative; top: -60px;}
+}
+
 #text1{
     text-align: center;
     font-size: 30px;
@@ -131,6 +213,7 @@ ul li a{color: rgb(241, 231, 231);}
     background-color: transparent;
     color: white;
     border: white solid 1px;
+    transition:  0.5s ease-in-out;
 }
 #mainbtn2{
     width: 200px;
@@ -147,6 +230,7 @@ ul li a{color: rgb(241, 231, 231);}
 #mainbtn2:hover{
     background-color: white;
     color: #ff525c;
+    transition:  0.5s ease-in-out;
 }
 .btn{
     display: flex;
@@ -187,113 +271,32 @@ ul li a{color: rgb(241, 231, 231);}
 .p{
     color: #919499;
 }
-.section3{
-    background-image: url("images/bg-pattern-circles-removebg-preview.png");
-    background-repeat: no-repeat;
-    margin-top: 100px;
-    height: 430px;
-    background-color: #3c3f60;
-    width: 100%;
-    border-bottom-left-radius:100px;
-    border-top-right-radius: 100px;
-}
-.phone{
-    width: 600px;
-    margin-left: 80px;
-    position: relative;
-    top: -80px;
-}
-.phone-flex{
-    display: flex;
-    justify-content: space-around;
-}
-.phone-text{
-    margin: 120px auto;
-    color: #ffffff;
-}
-.section4{
-    margin-bottom: 80px ;
-    width: 100%;
-}
-.laptop-sec{
-    display: flex;
-}
-.img-lap{
-    width: 600px;
-    margin-top: 150px;
-    margin-left: 50px;
-}
-.lap-text{
-    margin-top: 270px;
-    margin-left: 50px;
-}
-footer{
-    background-color: #24242c;
-    height: 300px;
-    border-top-right-radius: 100px;
-}
-.footer-flex{
-    display: flex;
-    justify-content: space-evenly;
-    color: #d4e0e0;
-    padding-top: 60px;
+@media(max-width: 500px){
+    .section2{
+        height: 1000px;
     }
-    .blog{
-
+    .h2{
+        text-align: left;
+        margin-left:90px ;
     }
-h5{
-     color: #b8bcc2;
-     margin-bottom: 10px;
+    .subtop{
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;   
     }
-#h3{
-    color: #939699;
-    margin-bottom: 20px;
+    .intro-img{
+        width: 400px;
+        height: auto;
+        margin:60px auto;
+    }
+    .intro-text{
+        margin-top: 0;
+        margin-left: 60px;
+    }
+    .h3{
+        color: #667b8e;
+    }
+    .p{
+        font-size: 13px;
+    }
 }
-/* Dropdown Button */
-.dropbtn {
-    background-color: transparent;
-    color: rgb(241, 231, 231);
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: transparent;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: transparent;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {color: rgb(109, 50, 50)}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-
-
-
-
-
-### Fonts
-
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
-- Weights: 300, 600
-
-- Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
-- Weights: 400, 500, 700
