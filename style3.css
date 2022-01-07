@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.section4{
+    margin-bottom: 80px ;
+    width: 100%;
+}
+.laptop-sec{
+    display: flex;
+}
+.img-lap{
+    width: 600px;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.lap-text{
+    margin-top: 270px;
+    margin-left: 50px;
+}
+@media(max-width: 500px){
+    .section4{
+        margin-bottom: 80px ;
+        width: 100%;
+    }
+    .laptop-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-lap{
+        width: 300px;
+        margin: 50px auto;
+    }
+    .lap-text{
+        margin-top: 0px;
+        margin-left: 50px;
+        font-size: 13px;
+    }   
+}
+    footer{
+        background-color: #24242c;
+        height: 300px;
+        border-top-right-radius: 100px;
+    }
+    .footer-flex{
+        display: flex;
+        justify-content: space-evenly;
+        color: #d4e0e0;
+        padding-top: 60px;
+    }
+
+    h5{
+        color: #b8bcc2;
+        margin-bottom: 10px;
+    }
+    #h3{
+        color: #939699;
+        margin-bottom: 20px;
+    }
+    @media(max-width: 500px){
+        footer{
+            height: 800px;
+            border-top-right-radius: 100px;
+        }
+        .footer-flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-top: 60px;
+            margin:  auto 100px;
+            }
+        h5{
+            margin-bottom: 10px;
+            }
+        #h3{
+            margin: 20px 0;}
+        }
+
+
+
+
